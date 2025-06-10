@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="pagetop.css">
+    <link rel="stylesheet" href="bottomnav.css">
+    <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="whitepage.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="dropdownNav.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="pagetop" class="pagetop-lightmode">
+            <div class="part1">
+                <div><img width="40" src="logo.png" class="logo"></div>
+                <nav id="firstnav">
+                    <div onclick="handleClick()"><a class="menu block" href="javascript:void(0);"> Menu <i class="fa fa-caret-down"  id="fa1"></i></a></div>
+                    <div onclick="handleCLICK()"><a href="#" class="Tutorials " id="Tutorials" href="javascript:void(0);"> Tutorials <i class="fa fa-caret-down"  id="fa2"></i></a></div>
+                    <div onclick="handleCLICK1()"><a href="#" class="Exercices" id="Exercices"> Exercices <i class="fa fa-caret-down" id="fa3"></i></a></div>
+                    <div onclick="handleCLICK2()"><a href="#" class="Certificates" id="Certificates"> Certificates <i class="fa fa-caret-down" id="fa4"></i></a></div>
+                    <div onclick="handleCLICK3()"><a href="#" class="Services" id="Services"> Services <i class="fa fa-caret-down" id="fa5"></i></a></div>
+                </nav>
+                <div class="search">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z"
+                            fill="black"></path>
+                    </svg>
+                </div>
+                <div onclick="Dark()"><span class="glyphicon" style="font-size:17px" role="button">&#xe063;</span></div>
+
+            </div>
+
+            <div class="part2">
+
+                <div>
+                    <a href="#" class="w3-button Plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="36" viewBox="0 0 12 16" fill="none"
+                            aria-hidden="true">
+                            <path
+                                d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z"
+                                fill="#9763f6"></path>
+                            <path
+                                d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z"
+                                fill="#9763f6"></path>
+                            <path
+                                d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z"
+                                fill="#9763f6"></path>
+                        </svg>
+                        Plus </a>
+                </div>
+                <div>
+                    <a href="#" class="w3-button Spaces">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" aria-hidden="true">
+                            <path
+                                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                                fill="currentColor"></path>
+                        </svg>
+                        Spaces </a>
+                </div>
+                <div>
+                    <a href="#" class="w3-button Certified">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" aria-hidden="true">
+                            <path
+                                d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                                fill="currentColor"></path>
+                        </svg>
+                        Get Certified </a>
+                </div>
+                <div class="log">
+                    <a href="#" class="signup" id="sign"> Sign Up </a>
+                    <a href="#" class="login"> Log in </a>
+                </div>
+            </div>
+            <nav class="mobilenav block" id="myLinks">
+                <div class="closeB closeA" onclick="closebtn()"><span>×</span></div>
+                <div class="mobilenavinner">
+                    <div>
+                        <span> Tutorials</span>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div>
+                        <span> Exercices</span>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div>
+                        <span> Certificates</span>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div>
+                        <span> Services</span>
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div>
+                        <span>Spaces </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" aria-hidden="true">
+                            <path
+                                d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Get Certified </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" aria-hidden="true">
+                            <path
+                                d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <span>Plus </span>
+                        <svg class="tnb-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="36"
+                            viewBox="0 0 12 16" fill="none" aria-hidden="true">
+                            <path
+                                d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z"
+                                fill="currentColor"></path>
+                            <path
+                                d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+
+            </nav>
+
+
+            <div class="dropdownNav" id="navTutorial">
+                <div class="dropdownNav-inner">
+                    <div class="content">
+                        <div class="navHeading">
+                            <div class="navtitle"><h2 style="color: #fff4a3">Tutorials</h2></div>
+                            <div class="filter">
+                                <div class="filter-input">
+                                    <input type="text" placeholder="Filter..." class="filterinput" id="myInput"  onkeyup="filterFunction()">
+                                    <div class="clear-btn" role="button" onclick="clearInput()">
+                                        <span>×</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lists">
+                            <div class="firstList">
+                                <div class="html-css">
+                                    <h3 class="nav-section-title">HTML and CSS</h3>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            HTML
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            CSS
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            RWD
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Bootstrap
+                                        </a>
+                                        <span href="#" class="linktext">Overview</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            W3.CSS
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Sass
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Colors
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Icons
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            SVG
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Canvas
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Graphics
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Character Sets
+                                        </a>
+                                        <span href="#" class="linktext">Reference</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            How To
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                </div>
+                                <div class="DataAnalytics">
+                                    <h3 class="nav-section-title">Data Analytics</h3>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            AI
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Generative AI
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            ChatGPT-3.5
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            ChatGPT-4
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Google Bard
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Machine Learning
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            DSA
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Data Science
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            NumPy
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Pandas
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            SciPy
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Matplotlib
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Statistics
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Exel
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Google Sheets
+                                        </a>
+                                        <span href="#" class="linktext">Tutorial</span>
+                                    </div>
+                                </div>
+                                <div class="Webbuilding hide1">
+                                    <div>
+                                        <h3 class="nav-section-title">Web Building</h3>
+                                        <div class="LearnH cc">
+                                            <a href="#" class="learn1"> Create a Website</a>
+                                            <span style="background-color: #d9212c; color: white" class="ribbon">HOT!</span>
+                                        </div>
+                                        <div class="LearnH cc">
+                                            <a href="#" class="learn1"> Create a Server</a>
+                                            <span style="background-color: #04AA6D; color: white" class="ribbon">NEW</span>
+                                        </div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Where To Start</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Web Templates</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Web Statistics</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Web Certificates</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Web Development</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Code Editor</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Test Your Typing Speed</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Play a Code Game</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Cyber Security</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Accessibility</a></div>
+                                        <div class="LearnH cc"><a href="#" class="learn1">Join our Newsletter</a></div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="secondList">
+                                <div class="JavaScript">
+                                    <h3 class="nav-section-title">JavaScript</h3>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            JavaScript
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            React
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            jQuery
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Vue
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            AngularJS
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            JSON
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            AJAX
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            AppML
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            W3.JS
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                </div>
+                                <div class="Webbuilding hide2">
+                                        <h3 class="nav-section-title">Web Building</h3>
+                                        <div class="cc">
+                                            <a href="#" class="learn1"> Create a Website</a>
+                                            <span style="background-color: #d9212c; color: white" class="ribbon">HOT!</span>
+                                        </div>
+                                        <div class="cc">
+                                            <a href="#" class="learn1"> Create a Server</a>
+                                            <span style="background-color: #04AA6D; color: white" class="ribbon">NEW</span>
+                                        </div>
+                                        <div><a href="#" class="learn1 cc">Where To Start</a></div>
+                                        <div><a href="#" class="learn1 cc">Web Templates</a></div>
+                                        <div><a href="#" class="learn1 cc">Web Statistics</a></div>
+                                        <div><a href="#" class="learn1 cc">Web Certificates</a></div>
+                                        <div><a href="#" class="learn1 cc">Web Development</a></div>
+                                        <div><a href="#" class="learn1 cc">Code Editor</a></div>
+                                        <div><a href="#" class="learn1 cc">Test Your Typing Speed</a></div>
+                                        <div><a href="#" class="learn1 cc">Play a Code Game</a></div>
+                                        <div><a href="#" class="learn1 cc">Cyber Security</a></div>
+                                        <div><a href="#" class="learn1 cc">Accessibility</a></div>
+                                        <div><a href="#" class="learn1 cc">Join our Newsletter</a></div>
+                                </div>
+                                <div class="Backend hide1">
+                                    <h3 class="nav-section-title">Backend</h3>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Python
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            SQL
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            MySQL
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            PHP
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Java
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C++
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C#
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            R
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            kotlin
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            GO
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Django  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            POSTGRESQL
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            TypeScript
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            ASP  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Node.js
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+    
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Raspberry Pi
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Git  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            MONGODB
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            AWS Cloud
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            WML  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thirdList">
+                                <div class="Backend hide2">
+                                    <h3 class="nav-section-title">Backend</h3>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Python
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            SQL
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            MySQL
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            PHP
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Java
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C++
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C#
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            R
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            kotlin
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            GO
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Django  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            POSTGRESQL
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            TypeScript
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            ASP  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Node.js
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+    
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Raspberry Pi
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            Git  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            MONGODB
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            AWS Cloud
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                    <div class="cc">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            WML  
+                                        </a>
+                                        <a href="#" class="linktext">Tutorial</a>
+                                        <a href="#" class="linktext">Reference</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="closeB" onclick="closeBTN()"><span>×</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdownNav" id="navExrcices">
+                <div class="dropdownNav-inner">
+                    <div class="content">
+                        <div class="navHeading">
+                            <div class="navtitle"><h2 style="color: #fff4a3">Exercices</h2></div>
+                            <div class="filter">
+                                <div class="filter-input" >
+                                    <input type="text" placeholder="Filter..." class="filterinput" id="myInput1"  onkeyup="filterFunction1()">
+                                    <div class="clear-btn" role="button" onclick="clearInput1()">
+                                        <span>×</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lists">
+                            <div class="firstList">
+                                <div class="html-css">
+                                    <h3 class="nav-section-title">HTML and CSS</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            HTML
+                                        </a>
+                                        <span href="#" class="linktext">Quiz</span>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            CSS
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Bootstrap3
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Bootstrap4
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Bootstrap5
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="DataAnalytics">
+                                    <h3 class="nav-section-title">Data Analytics</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            DSA
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            NumPy 
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Pandas
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            SciPy
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Exel
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                    </div>
+                                    
+                                </div> 
+                                <div class="blackBox">
+                                    <a href="#" class="box">What is an Exercise?</a>
+                                    <a href="#" class="box">What is a Quiz?</a>
+                                </div>
+                            </div>
+                            <div class="secondList">
+                                <div class="JavaScript hide2">
+                                    <h3 class="nav-section-title">JavaScript</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            JavaScript
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            React 
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            jQuery
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Vue
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thirdList">
+                                <div class="JavaScript hide1">
+                                    <h3 class="nav-section-title">JavaScript</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            JavaScript
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            React 
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            jQuery
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Vue
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                </div>
+                                <div class="Backend">
+                                    <h3 class="nav-section-title">Backend</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Python
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            SQL
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            MySQL
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            PHP
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Java
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            C++
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            C#
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            R
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            kotlin
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            GO
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Django  
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            POSTGRESQL
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            TypeScript
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            TypeScript  
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Git  
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Go  
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            MONGODB
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            AWS Cloud
+                                        </a>
+                                        <a href="#" class="linktext">Exercice</a>
+                                        <a href="#" class="linktext">Quiz</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="closeB" onclick="closeBTN()"><span>×</span></div>
+                    </div>
+                </div>
+            </div>  
+            <div class="dropdownNav" id="navCertificates">
+                <div class="dropdownNav-inner">
+                    <div class="content">
+                        <div class="navHeading">
+                            <div class="navtitle"><h2 style="color: #fff4a3">Certificates</h2></div>
+                            <div class="filter">
+                                <div class="filter-input">
+                                    <input type="text" placeholder="Filter..." class="filterinput" id="myInput2"  onkeyup="filterFunction2()" >
+                                    <div class="clear-btn" role="button" onclick="clearInput2()">
+                                        <span>×</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lists">
+                            <div class="firstList">
+                                <div class="html-css">
+                                    <h3 class="nav-section-title">HTML and CSS</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            HTML
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            CSS
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Bootstrap3
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Bootstrap4
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Bootstrap5
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="DataAnalytics">
+                                    <h3 class="nav-section-title">Data Analytics</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            DSA
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Data Analytics
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            NumPy 
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Pandas
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Exel
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Social Media
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    
+                                </div> 
+                                <div class="blackBox">
+                                    <a href="#" class="box">What is a Certificate?</a>
+                                </div>
+                                <div class="Programs hide1">
+                                    <h3 class="nav-section-title">Programs</h3>
+                                    <div class="LearnH aa">
+                                        <a href="#" class="learn">
+                                            Full Access
+                                        </a>
+                                        <span style="background-color: #04AA6D; color: white" class="ribbon">Best Value!</span>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Front End
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Web Dev.
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Web App
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Web Desigh
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="secondList">
+                                <div class="JavaScript">
+                                    <h3 class="nav-section-title">JavaScript</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            JavaScript
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            React 
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            jQuery
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Vue
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                </div>
+                                <div class="Programs hide2">
+                                    <h3 class="nav-section-title">Programs</h3>
+                                    <div class="LearnH aa">
+                                        <a href="#" class="learn">
+                                            Full Access
+                                        </a>
+                                        <span style="background-color: #04AA6D; color: white" class="ribbon">Best Value!</span>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Front End
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Web Dev.
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Web App
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Web Desigh
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                </div>
+                                <div class="Backend hide1">
+                                    <h3 class="nav-section-title">Backend</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Python
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            SQL
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            MySQL
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            PHP
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Java
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            C++
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            C#
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            R
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Django  
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            TypeScript
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            XML  
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Cyber Security
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Accessibility  
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                   
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Python Apps on AWS  
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            AWS Training
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thirdList">
+                                <div class="Backend hide2">
+                                    <h3 class="nav-section-title">Backend</h3>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Python
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            SQL
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            MySQL
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            PHP
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Java
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            <span class="learn-span">Learn</span>
+                                            C
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            C++
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            C#
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            R
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Django  
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            TypeScript
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            XML  
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Cyber Security
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Accessibility  
+                                        </a>
+                                        <a href="#" class="linktext">Certificate</a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                   
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            Python Apps on AWS  
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                    <div class="aa">
+                                        <a href="#" class="learn">
+                                            AWS Training
+                                        </a>
+                                        <a href="#" class="linktext">course</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+                        </div>
+                        <div class="closeB" onclick="closeBTN()"><span>×</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdownNav" id="navServices">
+                <div class="dropdownNav-inner">
+                    <div class="content">
+                        <div class="navHeading">
+                            <div class="navtitle"><h2 style="color: #fff4a3">All Our Services</h2></div>
+                            <div class="filter">
+                                <div class="filter-input">
+                                    <input type="text" placeholder="Filter..." class="filterinput" id="myInput3"  onkeyup="filterFunction3()">
+                                    <div class="clear-btn" role="button" onclick="clearInput3()">
+                                        <span>×</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navHeading">
+                            <p class="phead">W3Schools offers a wide range of services and products for beginners and professionals,
+                                <br>
+                                helping millions of people everyday to learn and master new skills.
+                            </p>
+                        </div>
+                        <div class="serviceboxes">
+                            <div class="servicebox" >
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Free Tutorials</h4>
+                                        <p>Enjoy our free tutorials like millions of other internet users since 1999</p>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>References</h4>
+                                        <p>Explore our selection of references covering all popular coding languages</p> 
+                                    </div>
+                               </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Create a Website</h4>
+                                        <p>
+                                            Create your own website with
+                                            <strong>W3Schools Spaces</strong>
+                                            - no setup required
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Exercises</h4>
+                                        <p>Test your skills with different exercises</p> 
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Quizzes</h4>
+                                        <p>Test yourself with multiple choice questions</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" style="position: relative;" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Get Certified</h4>
+                                        <p>Document your knowledge</p>
+                                        <svg style="position: absolute; top: 15px; right: 25px" width="15" height="36" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z" fill="#9763f6"></path>
+                                            <path d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z" fill="#9763f6"></path>
+                                            <path d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z" fill="#9763f6"></path>
+                                        </svg>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Log in / Sign Up</h4>
+                                        <p>
+                                            Create a
+                                            <strong>free</strong>
+                                            W3Schools Account to Improve Your Learning Experience
+                                        </p> 
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Pathfinder & My Learning</h4>
+                                        <p>Track your learning progress at W3Schools and collect rewards</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink" style="position: relative;">
+                                    <div class="services">
+                                        <h4>Upgrade</h4>
+                                        <p>Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)</p>
+                                        <svg style="position: absolute; top: 15px; right: 25px" width="15" height="36" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z" fill="#9763f6"></path>
+                                            <path d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z" fill="#9763f6"></path>
+                                            <path d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z" fill="#9763f6"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Where To Start</h4>
+                                        <p>Not sure where you want to start? Follow our guided path</p>                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Code Editor (Try it)</h4>
+                                        <p>With our online code editor, you can edit code and view the result in your browser</p>                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink" style="position: relative;">
+                                    <div class="services">
+                                        <h4>Videos</h4>
+                                        <p>Learn the basics of HTML in a fun and engaging video tutorial</p>
+                                        <svg style="position: absolute; top: 15px; right: 25px" width="15" height="36" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z" fill="#9763f6"></path>
+                                            <path d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z" fill="#9763f6"></path>
+                                            <path d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z" fill="#9763f6"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Templates</h4>
+                                        <p>We have created a bunch of responsive website templates you can use - for free!</p>                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Web Hosting</h4>
+                                        <p>
+                                            Host your own website, and share it to the world with
+                                            <strong>W3Schools Spaces</strong>
+                                        </p>       
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Create a Server</h4>
+                                        <p>Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.</p>                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>How To's</h4>
+                                        <p>Large collection of code snippets for HTML, CSS and JavaScript</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>CSS Framework</h4>
+                                        <p>
+                                            Build fast and responsive sites using our free
+                                            <strong>W3.CSS</strong>
+                                            framework
+                                        </p>  
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Browser Statistics</h4>
+                                        <p>Read long term trends of browser usage</p>    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Typing Speed</h4>
+                                        <p>Test your typing speed</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>AWS Training</h4>
+                                        <p>Learn Amazon Web Services</p>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Color Picker</h4>
+                                        <p>
+                                            Use our color picker to find different RGB, HEX and HSL colors.
+                                        </p>                                       
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Code Game</h4>
+                                        <p style="margin-top: 15px">
+                                            W3Schools Coding Game! Help the lynx collect pine cones
+                                        </p>                                       
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Set Goal</h4>
+                                        <p>Get personalized learning journey based on your current skills and goals</p></div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Newsletter</h4>
+                                        <p>Join our newsletter and get access to exclusive content every month</p>                                      
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Contact Us</h4>
+                                        <p>
+                                            About sales:
+                                            <span style="float: right">sales@w3schools.com</span>
+                                            <br>
+                                            About errors:
+                                            <span style="float: right">help@w3schools.com</span>
+                                          </p>                                      
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="servicebox">
+                                <a href="#" class="serviceslink">
+                                    <div class="services">
+                                        <h4>Classroom</h4>
+                                        <p>Get in touch for using W3Schools Plus and certifications as an educational institution</p> 
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="closeB" onclick="closeBTN()"><span>×</span></div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="bottomnav">
+            <div id="menubtn" onclick="openMenu()">
+                <a href="#" class="icon-menu"><i class="fa fa-bars" style="font-size: 17px;"></i></a>
+            </div>
+            <div class="scroll_left_btn" id="scroll_left_btn" > &nbsp; &nbsp; ❮ &nbsp; &nbsp; </div>
+            <div class="scroll_right_btn" id="scroll_right_btn"> &nbsp; &nbsp; ❯ &nbsp; &nbsp; </div>
+            <a href="#" class="btn active">HTML</a>
+            <a href="#" class="btn">CSS</a>
+            <a href="#" class="btn">JAVASCRIPT</a>
+            <a href="#" class="btn">SQL</a>
+            <a href="#" class="btn">PYTHON</a>
+            <a href="#" class="btn">JAVA</a>
+            <a href="#" class="btn">PHP</a>
+            <a href="#" class="btn">HOW TO</a>
+            <a href="#" class="btn">W3.CSS</a>
+            <a href="#" class="btn">C</a>
+            <a href="#" class="btn">C++</a>
+            <a href="#" class="btn">C#</a>
+            <a href="#" class="btn">BOOTSTRAP</a>
+            <a href="#" class="btn">REACT</a>
+            <a href="#" class="btn">MYSQL</a>
+            <a href="#" class="btn">JQURY</a>
+            <a href="#" class="btn">EXCEL</a>
+            <a href="#" class="btn">XML</a>
+            <a href="#" class="btn">NUMPY</a>
+            <a href="#" class="btn">PANDAS</a>
+            <a href="#" class="btn">NODEJS</a>
+            <a href="#" class="btn">R</a>
+            <a href="#" class="btn">ANGULAR</a>
+            <a href="#" class="btn">GIT</a>
+            <a href="#" class="btn">POSTGRESQL</a>
+            <a href="#" class="btn">MONGODB</a>
+            <a href="#" class="btn">ASP</a>
+            <a href="#" class="btn">AI</a>
+            <a href="#" class="btn">GO</a>
+            <a href="#" class="btn">KOTLIN</a>
+            <a href="#" class="btn">SASS</a>
+            <a href="#" class="btn">VUE</a>
+            <a href="#" class="btn">DSA</a>
+            <a href="#" class="btn">GEN AI</a>
+            <a href="#" class="btn">SCIPY</a>
+            <a href="#" class="btn">AWS</a>
+            <a href="#" class="btn">CYBERSECURITY</a>
+            <a href="#" class="btn">DATA SCIENCE &nbsp; &nbsp;</a>
+
+
+        </div>
+
+    </header>
+    
+    
+    <div id="sidenav">
+        <div id="leftmenu">
+            <div id="leftmenuinner">
+                <h2>
+                    <span>HTML Tutorial</span>
+                </h2>
+                <a href="#" class="btnn activee">HTML HOME</a>
+                <a href="#" class="btnn">HTML Introduction</a>
+                <a href="#" class="btnn">HTML Editors</a>
+                <a href="#" class="btnn">HTML Basic</a>
+                <a href="#" class="btnn">HTML Elements</a>
+                <a href="#" class="btnn">HTML Attributes</a>
+                <a href="#" class="btnn">HTML Headings</a>
+                <a href="#" class="btnn">HTML Paragraphs</a>
+                <a href="#" class="btnn">HTML Formatting</a>
+                <a href="#" class="btnn">HTML Quotations</a>
+                <a href="#" class="btnn">HTML Comments</a>
+                <a href="#" class="btnn">HTML Colors</a>
+                <a href="#" class="btnn">HTML CSS</a>
+                <a href="#" class="btnn">HTML Links</a>
+                <a href="#" class="btnn">HTML Images</a>
+                <a href="#" class="btnn">HTML Favicon</a>
+                <a href="#" class="btnn">HTML Page Title</a>
+                <a href="#" class="btnn">HTML Tables</a>
+                <a href="#" class="btnn">HTML lists</a>
+                <a href="#" class="btnn">HTML Block & Inline</a>
+                <a href="#" class="btnn">HTML Div</a>
+                <a href="#" class="btnn">HTML Classes</a>
+                <a href="#" class="btnn">HTML Id</a>
+                <a href="#" class="btnn">HTML JavaScript</a>
+                <a href="#" class="btnn">HTML File Paths</a>
+                <a href="#" class="btnn">HTML Head</a>
+                <a href="#" class="btnn">HTML Layout</a>
+                <a href="#" class="btnn">HTML Responsive</a>
+                <a href="#" class="btnn">HTML Computercode</a>
+                <a href="#" class="btnn">HTML Semantics</a>
+                <a href="#" class="btnn">HTML Style Guide</a>
+                <a href="#" class="btnn">HTML Entities</a>
+                <a href="#" class="btnn">HTML Symbols</a>
+                <a href="#" class="btnn">HTML Emojis</a>
+                <a href="#" class="btnn">HTML Charsets</a>
+                <a href="#" class="btnn">HTML URL Encode</a>
+                <a href="#" class="btnn">HTML vs. XHTML</a>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <div class="containerB">
+        <div class="red">
+            <div class="filld"><img src="" alt="" id="image-container"></div><h1>HTML Tutorial</h1>
+            <div class="topbtn">
+                <a href="#" class="w3-left w3-btn">❮ Home</a>
+                <a href=""class="w3-right w3-btn">Next ❯</a>
+            </div>
+            <div class="w3-info" > 
+                <p>HTML is the standard markup language for Web pages.</p>
+                <p>With HTML you can create your own Website.</p>
+                <p>HTML is easy to learn - You will enjoy it!</p>
+                <a href="#" class="w3-btn">Study our free HTML Tutorial »</a>
+            </div>
+            <hr>
+            <h2 >Easy Learning with HTML "Try it Yourself"</h2>
+            <p>With our "Try it Yourself" editor, you can edit the HTML code and view the result:</p>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code">
+                    <span>
+                        <span><</span>
+                        !DOCTYPE
+                        <span>html</span>
+                        <span>></span>
+                    </span>
+                    <br>
+                    <span>
+                        <span><</span>
+                        html
+                        <span>></span>
+                    </span>
+                    <br>
+                    <span>
+                        <span><</span>
+                        head
+                        <span>></span>
+                    </span>
+                    <br>
+                    <span>
+                        <span><</span>
+                        title
+                        <span>></span>
+                    </span>
+                    Page Title
+                    <span>
+                        <span><</span>
+                        /title
+                        <span>></span>
+                    </span>
+                    <br>
+                    <span>
+                        <span><</span>
+                        /head
+                        <span>></span>
+                    </span>
+                    <span>
+                        <span><</span>
+                        body
+                        <span>></span>
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <span><</span>
+                        h1
+                        <span>></span>
+                    </span>
+                    <span>
+                        This is a Heading
+                            <span><</span>
+                            /h1
+                            <span>></span>                
+                    </span>
+                    <br>
+                    <span>
+                        <span><</span>
+                        p
+                        <span>></span>
+                    </span>
+                    This is a paragraph.
+                    <span>
+                        <span><</span>
+                        /h1
+                        <span>></span>
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <span><</span>
+                        /body
+                        <span>></span>
+                    </span>
+                    <span>
+                        <span><</span>
+                        /html
+                        <span>></span>
+                    </span>
+
+
+                </div>
+                <a href="#"class="w3-btn w3-margin-bottom">Try it Yourself »</a>
+
+            </div>
+            <p><strong>Click on the "Try it Yourself" button to see how it works.</strong></p>
+            <hr>
+            <h2>HTML Examples</h2>
+            <p>In this HTML tutorial, you will find more than 200 examples. With our online 
+                "Try it Yourself" editor, you can edit and test each example yourself!
+            </p>
+            <p><a href="#" class="ws-btn ws-grey">Go to HTML Examples!</a></p>
+            <hr>
+            <div class="filld">
+                <div><img src="" alt="" id="image-second-container"></div>
+            </div>
+            <hr>
+            <h2>HTML Exercises</h2>
+            <p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
+            <form action="exercices"id="w3-exerciseform">
+                <h2 style="color: white;">Test Yourself With Exercises</h2>
+                <div class="exercisewindow">
+                    <h2>Exercise:</h2>
+                    <p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+                    <div class="exerciseprecontainer">
+                    &lt;p <input style="width: 54px;">="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+                    </div>
+                    <br>
+                    <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer »</button>
+                    <p><a style="color: black;text-decoration: underline;">Start the Exercise </a></p>
+                </div>
+            </form>
+            <hr>
+            <h2>HTML Quiz Test</h2>
+            <p>Test your HTML skills with our HTML Quiz!</p>
+            <p><a href="#"class="ws-btn w3-blue">Start HTML Quiz!</a></p>
+            <hr>
+            <h2>My Learning</h2>
+            <p>Track your progress with the free "My Learning" program here at W3Schools.</p>
+            <p>Log in to your account, and start earning points!</p>
+            <p>This is an optional feature. You can study at W3Schools without using My Learning.</p>
+            <div class="filld">
+                <img src="mylearning.webp" alt="">
+            </div>
+            <br>
+            <hr>
+            <h2>HTML References</h2>
+            <p>At W3Schools you will find complete references about HTML elements, 
+                attributes, events, color names, entities, character-sets, URL encoding, 
+                language codes, HTTP messages, browser support, and more:</p>
+            <div class="row">
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">HTML Elements</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Browser Support</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Attributes</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Global Attributes</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Event Attributes</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Color Names</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Canvas</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Audio/Video DOM</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Character Sets</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">URL Encoding</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Language Codes</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Country Codes</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">HTTP Messages</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Px to Em Converter</a></div>
+                <div class="w3-third"><a href="#" class="bigbtn ws-grey">Keyboard Shortcuts</a></div>
+
+            </div>
+            <br>
+            <div id="getdiploma">
+                <h2>Kickstart your career</h2>
+                <p>Get certified by completing the HTML course</p>
+                <a href="#" class="w3-btn w3-margin-bottom">Get certified</a>
+                <svg id="w3_cert_arrow" viewBox="0 0 170 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M159.804 93.8429L162.704 84.4917L152.715 80.8293" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <svg id="w3_cert_badge" data-name="w3_cert_badge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><style>.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}</style></defs><circle class="cls-1" cx="150" cy="150" r="146.47" transform="translate(-62.13 150) rotate(-45)"></circle><text class="cls-2" transform="translate(93.54 63.89) rotate(-29.5)">w</text><text class="cls-2" transform="translate(107.13 56.35) rotate(-20.8)">3</text><text class="cls-2" transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)">s</text><text class="cls-2" transform="translate(136.89 47.84) rotate(-3.47)">c</text><text class="cls-2" transform="translate(152.39 47.03) rotate(5.12)">h</text><text class="cls-2" transform="translate(167.85 48.54) rotate(13.72)">o</text><text class="cls-2" transform="translate(182.89 52.35) rotate(22.34)">o</text><text class="cls-2" transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)">l</text><text class="cls-2" transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)">s</text><text class="cls-3" transform="translate(35.51 186.66) rotate(69.37)"> </text><text class="cls-3" transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)">C</text><text class="cls-3" transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)">E</text><text class="cls-3" transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)">R</text><text class="cls-3" transform="translate(69.16 238.92) rotate(39.44)">T</text><text class="cls-3" transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)">I</text><text class="cls-3" transform="translate(94.94 256.83) rotate(24.36)">F</text><text class="cls-3" transform="translate(109.34 263.09) rotate(16.83)">I</text><text class="cls-3" transform="translate(124.46 267.41) rotate(9.34)">E</text><text class="cls-3" transform="translate(139.99 269.73) rotate(1.88)">D</text><text class="cls-3" transform="translate(155.7 270.01) rotate(-5.58)"> </text><text class="cls-3" transform="translate(171.32 268.24) rotate(-13.06)"> </text><text class="cls-2" transform="translate(187.55 266.81) rotate(-21.04)">.</text><text class="cls-3" transform="translate(203.27 257.7) rotate(-29.24)"> </text><text class="cls-3" transform="translate(216.84 249.83) rotate(-36.75)"> </text><text class="cls-3" transform="translate(229.26 240.26) rotate(-44.15)">2</text><text class="cls-3" transform="translate(240.39 229.13) rotate(-51.62)">0</text><text class="cls-3" transform="translate(249.97 216.63) rotate(-59.17)">2</text><text class="cls-3" transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)">4</text><path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"></path><path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"></path></svg>
+            </div>
+            <hr>
+            <h2 class="vid">Video: HTML for Beginners</h2>
+            <br>
+            <div class="video">
+                <div class="yt-container">
+                </div>
+                <img src="css_background_colors.png" alt="">
+            </div>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="topbtn">
+                <a href="#" class="w3-left w3-btn">❮ Home</a>
+                <a href=""class="w3-right w3-btn">Next ❯</a>
+            </div>
+            <div class="pathfinder">
+                <div class="inner">
+                    <div class="contain">
+                        <div class="title">W3schools Pathfinder</div>
+                        <div class="headline">Track your progress - it's free!</div>
+                        <div class="-body">
+                            <div class="progressbar">
+                                <div class="slider">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="log">
+                        <a href="#" class="signup" id="sign"> Sign Up </a>
+                        <a href="#" class="login"> Log in </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        <div id="rightnav">
+            <div class="sidesection">
+                <div>ADVERTISEMENT</div>
+                <div class="firstad filld">
+                    <img src="" alt="" id="rightimg">
+                </div>
+                <div><img src="" alt="" id="scdimg"></div>
+                <div class="sidesection">
+                    <h4><a href="#" class="PICKER">COLOR PICKER</a></h4>
+                    <div><img src="colorpicker2000.webp" alt=""></div>
+                </div>
+                <div class="sidesection">
+                    <i style="font-size:30px" class="fa youtube">&#xf16a;</i>
+                    <i style="font-size:30px" class="fa linkedin">&#xf08c;</i>
+                    <i style="font-size:30px" class="fa twitter">&#xf081;</i>
+                    <i style="font-size:30px" class="fa facebook">&#xf082;</i>
+                    <i style="font-size:30px" class="fa insta">&#xf16d;</i>
+                </div>
+                <div class="stickypos">
+                    <img src="" alt="" id="fixed">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerr">
+        <div class="bottomad">
+            <div>ADVERTISEMENT</div>
+            <div class="filld"><img src="1013924680449222556.png" alt=""></div>
+        </div>
+        <div class="bottomad1">
+            <div>ADVERTISEMENT</div>
+            <div class="filld"><img src="7498528087900578905.png" alt=""></div>
+        </div>
+       
+    </div>
+    <section class="footer">
+        <div class="footer-content">
+            <div class="wrap">
+                <div class="lastlogo"><img src="img_aws_w3_logo.png" class="fa fa-logo" width="50"></div>
+                <div class="footerlinks">
+                    <strong><a href="#" class="footerlink">SPACES</a></strong>
+                    <strong><a href="#" class="footerlink">UPGRADE</a></strong>
+                    <strong><a href="#" class="footerlink">AD-FREE</a></strong>
+                    <strong><a href="#" class="footerlink">NEWSLETTER</a></strong>
+                    <strong><a href="#" class="footerlink">GET CERTIFIED</a></strong>
+                    <strong><a href="#" class="footerlink">CONTACT US</a></strong>
+                </div>
+            </div>
+            
+            <div class="footerlinks foo2">
+                <div class="footerlinks_2 first">
+                    <h5>Top Tutorials</h5>
+                    <a href="#">HTML Tutorial</a>
+                    <a href="#">CSS Tutorial</a>
+                    <a href="#">JavaScript Tutorial</a>
+                    <a href="">How To Tutorial</a>
+                    <a href="">SQL Tutorial</a>
+                    <a href="">Python Tutorial</a>
+                    <a href="">W3.CSS Tutorial</a>
+                    <a href="">Bootstrap Tutorial</a>
+                    <a href="">PHP Tutorial</a>
+                    <a href="">Java Tutorial</a>
+                    <a href="">C++ Tutorial</a>
+                    <a href="">jQuery Tutorial</a>
+    
+                </div>
+                <div class="footerlinks_2">
+                    <h5>Top References</h5>
+                    <a href="#">HTML Reference</a>
+                    <a href="#"> CSS Reference</a>
+                    <a href="#">JavaScript Reference</a>
+                    <a href="#">SQL Reference</a>
+                    <a href="#">Python Reference</a>
+                    <a href="#"> W3.CSS Reference</a>
+                    <a href="#">Bootstrap Reference</a>
+                    <a href="#">PHP Reference</a>
+                    <a href="#"> HTML Colors</a>
+                    <a href="#">Java Reference</a>
+                    <a href="#">Angular Reference</a>
+                    <a href="#">jQuery Reference</a>
+                </div>
+                <div class="footerlinks_2">
+                    <h5>Top Examples </h5>
+                    <a href="#">HTML Examples</a>
+                    <a href="#">CSS Examples</a>
+                    <a href="#">JavaScript Examples</a>
+                    <a href="">How To Examples</a>
+                    <a href="">SQL Examples</a>
+                    <a href="">Python Examples</a>
+                    <a href="">W3.CSS Examples</a>
+                    <a href="">Bootstrap Examples</a>
+                    <a href="">PHP Examples</a>
+                    <a href="">Java Examples</a>
+                    <a href="">XML Examples</a>
+                    <a href="">jQuery Examples</a>
+                </div>
+                <div class="footerlinks_2">
+                    <h5>Get Certified</h5>
+                    <a href="#">HTML Certificate</a>
+                    <a href="#">CSS Certificate</a>
+                    <a href="#">JavaScript Certificate</a>
+                    <a href="">Front End Certificate</a>
+                    <a href="">SQL Certificate</a>
+                    <a href="">Python Certificate</a>
+                    <a href="">PHP Certificate</a>
+                    <a href="">jQuery Certificate</a>
+                    <a href="">Java Certificate</a>
+                    <a href="">C++ Certificate</a>
+                    <a href="">C# Certificate</a>
+                    <a href="">XML Certificate</a>
+    
+                </div>
+            </div>
+            <div class="footerIcon">
+                <i style="font-size:30px" class="fa youtube">&#xf16a;</i>
+                <i style="font-size:30px" class="fa linkedin">&#xf08c;</i>
+                <i style="font-size:30px" class="fa twitter">&#xf081;</i>
+                <i style="font-size:30px" class="fa facebook">&#xf082;</i>
+                <i style="font-size:30px" class="fa insta">&#xf16d;</i>
+                <a href="#">FORUM</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CLASSROOM</a>
+            </div>
+            <div class="footerText">
+                W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning.
+                Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness
+                of all content. While using W3Schools, you agree to have read and accepted our 
+                <a href="#">terms of use</a>
+                ,
+                <a href="#">cookie and privacy policy</a>.
+                <br>
+                <br>
+                <a href="#">Copyright 1999-2024</a>
+                by Refsnes Data. All Rights Reserved.
+                <a href="#">W3Schools is Powered by W3.CSS</a>
+                .
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="w3school.js"></script>
+</body>
+
+</html>
